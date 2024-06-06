@@ -1,0 +1,129 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: rgb(55, 60, 60);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Center items horizontally */
+}
+
+.app {
+  padding-bottom: 70px; /* Adjust the value based on your footer height */
+}
+
+.navbar li {
+  margin-right: 20px;
+  text-align: center;
+}
+
+.nav-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 50px;
+  margin-left: 50px;
+  size-adjust: 100px;
+}
+
+.nav-name {
+  display: block;
+  color:#da2828;
+  margin-right: 50px;
+  margin-left: 50px;
+  text-decoration: double;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 18px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: black;
+  color: rgb(0, 0, 0);
+}
+
+.navbar a.active {
+  color:whitesmoke;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 220px; /* Space for the navbar */
+  padding: 20px;
+  width: calc(100% - 220px); /* Adjust width to take up remaining space */
+  box-sizing: border-box;
+  }
+}
+
+.search-bar {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  justify-content: center; /* Center items horizontally */
+}
+
+.search-bar input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 500px;
+  margin-right: 5px;
+}
+
+.search-bar button {
+  padding: 10px;
+  background-color: #282c34;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #da2828;
+  color: black;
+}
+
+.profile-icon {
+  width: 35px; /* Adjust the width as needed */
+  padding-top: 18%;
+  height: auto;
+  margin-left: -30%;
+  cursor: pointer; /* Add cursor style if it should look clickable */
+
+}
+
